@@ -44,13 +44,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('☒ Δᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ ☒', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('☒ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ ☒', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('⌬ ᴇΔʀɴ ꪑᴏꫝᴇꪗ ⌬', callback_data="shortlink_info"),
-                    InlineKeyboardButton('⚝ ᴜᴘᦔΔᴛꫀ𝘴 ⚝', callback_data='channels')
+                    InlineKeyboardButton('⌬ ᴇᴀʀɴ ᴍᴏɴᴇʏ ⌬', callback_data="shortlink_info"),
+                    InlineKeyboardButton('⚝ ᴜᴘᴅᴀᴛᴇꜱ ⚝', callback_data='channels')
                 ],[
-                    InlineKeyboardButton('⇱  ᴄ0ᴍᴍᴀɴᴅꜱ  ⇲', callback_data='help'),
-                    InlineKeyboardButton('⊛ Δʙᴏᴜᴛ ⊛', callback_data='about')
+                    InlineKeyboardButton('⇱  ᴄᴏᴍᴍᴀɴᴅꜱ  ⇲', callback_data='help'),
+                    InlineKeyboardButton('⊛ ᴀʙᴏᴜᴛ ⊛', callback_data='about')
                 ],[
                     InlineKeyboardButton("◎ ꜱᴜᴩᴩᴏʀᴛ ◎", url="https://t.me/+0Zi1FC4ulo8zYzVl")
                   ]]
@@ -128,13 +128,13 @@ async def start(client, message):
         
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('☒ Δᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ ☒', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('☒ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ ☒', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('⌬ ᴇΔʀɴ ꪑᴏꫝᴇꪗ ⌬', callback_data="shortlink_info"),
-                    InlineKeyboardButton('⚝ ᴜᴘᦔΔᴛꫀ𝘴 ⚝', callback_data='channels')
+                    InlineKeyboardButton('⌬ ᴇᴀʀɴ ᴍᴏɴᴇʏ ⌬', callback_data="shortlink_info"),
+                    InlineKeyboardButton('⚝ ᴜᴘᴅᴀᴛᴇꜱ ⚝', callback_data='channels')
                 ],[
-                    InlineKeyboardButton('⇱  ᴄ0ᴍᴍᴀɴᴅꜱ  ⇲', callback_data='help'),
-                    InlineKeyboardButton('⊛ Δʙᴏᴜᴛ ⊛', callback_data='about')
+                    InlineKeyboardButton('⇱  ᴄᴏᴍᴍᴀɴᴅꜱ  ⇲', callback_data='help'),
+                    InlineKeyboardButton('⊛ ᴀʙᴏᴜᴛ ⊛', callback_data='about')
                 ],[
                     InlineKeyboardButton("◎ ꜱᴜᴩᴩᴏʀᴛ ◎", url="https://t.me/+0Zi1FC4ulo8zYzVl")
                   ]]
