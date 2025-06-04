@@ -74,6 +74,8 @@ async def get_shortlink(url):
 
 @Client.on_message(filters.group | filters.private & filters.text & filters.incoming)
 async def give_filter(client, message):
+    if message.chat.id == -1002601575630:
+        return
     if re.search(r'(?im)(?:https?://|www\.|t\.me/|telegram\.dog/)\S+|@[a-z0-9_]{5,32}\b', message.text):
         return
     if message.chat.id != SUPPORT_CHAT_ID:
